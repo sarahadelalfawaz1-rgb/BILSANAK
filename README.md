@@ -58,3 +58,15 @@ Yara Hammad Alanazi,
 
 Course: Introduction to Agent-Based Systems (CAI461)
 Academic Year: 2026–2027
+___________________________________________________________________________-
+Run the Application
+To run the BILSANAK application locally:
+Install the required libraries:
+pip install -r requirements.txt
+Run the Streamlit application:
+streamlit run app.py
+Open the local URL displayed in the terminal.
+Live Application
+The BILSANAK application is also available online:
+https://bilsanak.streamlit.app
+Users can access the Traveler Page to request an interpreter or the Admin / Simulation Page to test different scenarios.
