@@ -330,3 +330,50 @@ if page == "Admin / Simulation Page":
             )
         }
     )
+
+if page == "Admin / Simulation Page":
+
+    st.divider()
+    st.header("🤖 Agent Status")
+
+    agent_icons = {
+        "Request Agent": "📩",
+        "Matching Agent": "🔎",
+        "Translator Agent": "🗣️",
+        "Monitoring Agent": "📊"
+    }
+
+    cols = st.columns(4)
+
+    for col, (agent, status) in zip(
+        cols, st.session_state.agent_status.items()
+    ):
+        with col:
+            with st.container(border=True):
+                st.markdown(f"### {agent_icons[agent]}")
+                st.markdown(f"**{agent}**")
+                st.caption(status)
+
+    st.divider()
+    st.header("💬 Agent Communication Log")
+
+    if st.session_state.message_log:
+        st.caption(
+            f"Total Messages: {len(st.session_state.message_log)}"
+        )
+
+        for i, message in enumerate(
+            st.session_state.message_log, start=1
+        ):
+            with st.expander(
+                f'💬 Message {i} | '
+                f'{message["sender"]} → {message["receiver"]}'
+            ):
+                st.write(
+                    f'**Performative:** {message["performative"]}'
+                )
+                st.json(message)
+    else:
+        st.info(
+            "No messages yet. Agent communication will appear here."
+        )
