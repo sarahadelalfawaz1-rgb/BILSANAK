@@ -51,10 +51,10 @@ Translator Delay: The Monitoring Agent detects a simulated delay and requests a 
 All three scenarios produced the expected results in the simulated airport environment.
 
 8. Team Members
-Sarah Adel Alfawaz
-Hessa Shatwi Alhuwail
-Shaden Alkhunayn
-Yara Hammad Alanazi
+Sarah Adel Alfawaz,
+Hessa Shatwi Alhuwail,
+Shaden Alkhunayn,
+Yara Hammad Alanazi,
 
 Course: Introduction to Agent-Based Systems (CAI461)
 Academic Year: 2026–2027
