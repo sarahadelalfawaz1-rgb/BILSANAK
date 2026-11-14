@@ -28,10 +28,13 @@ pip install -r requirements.txt
 
 5. How to Run
 Open Bilisank.ipynb in Google Colab.
-Run the notebook cells in order.
-Wait for the Streamlit application link to appear.
-Click the generated link to open the BILSANAK web interface.
-Use the Traveler Page to request an interpreter or the Admin / Simulation Page to test the system.
+Upload the required files (agents.py and the BILSANAK logo) to the Colab Files section. Make sure the filenames match those used in the notebook.
+Run the notebook cells one by one, in order, from top to bottom. Do not run all cells at once.
+Wait for each cell to finish before running the next cell.
+When prompted, enter your own LangSmith API key.
+Continue running the remaining cells until the Cloudflare Tunnel generates a Streamlit application link.
+Click the generated link to open the BILSANAK interface.
+Important: The notebook must be executed cell by cell in the correct order. The application may not work properly if required files are missing or cells are skipped.
 
 6. User Interface
 BILSANAK provides an interactive web interface developed using Streamlit. It includes two main pages:
