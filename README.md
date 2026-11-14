@@ -58,8 +58,9 @@ Yara Hammad Alanazi,
 
 Course: Introduction to Agent-Based Systems (CAI461)
 Academic Year: 2026–2027
-___________________________________________________________________________-
-Run the Application
+___________________________________________________________________________
+
+Run the Application:
 To run the BILSANAK application locally:
 Install the required libraries:
 pip install -r requirements.txt
